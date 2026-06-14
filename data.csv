@@ -1,0 +1,31 @@
+employee_id,name,age,gender,department,job_title,salary,joining_date,performance_score,satisfaction_score,work_hours,promotion_last_5_years,attrition
+1,Alice Johnson,29,F,Engineering,Software Engineer,85000,2020-06-15,4.2,4.5,42,1,No
+2,Bob Smith,35,M,Sales,Sales Executive,62000,2019-03-10,3.8,3.9,45,0,No
+3,Charlie Lee,41,M,HR,HR Manager,78000,2017-08-21,4.5,4.2,40,1,No
+4,Diana Patel,26,F,Engineering,Data Analyst,70000,2021-11-05,4.1,4.6,41,0,No
+5,Ethan Brown,38,M,Marketing,Marketing Manager,82000,2018-02-14,4.0,3.8,43,1,No
+6,Fatima Khan,30,F,Engineering,DevOps Engineer,90000,2020-09-30,4.3,4.4,44,1,No
+7,George Wilson,45,M,Finance,Financial Analyst,95000,2016-05-18,4.6,4.1,40,1,No
+8,Hannah Davis,27,F,Sales,Sales Executive,61000,2022-01-12,3.5,3.7,46,0,Yes
+9,Isaac Miller,33,M,Engineering,Backend Developer,88000,2019-07-25,4.2,4.3,42,0,No
+10,Julia Garcia,31,F,HR,Recruiter,65000,2021-03-19,3.9,4.0,39,0,No
+11,Kevin Anderson,36,M,Engineering,Tech Lead,110000,2015-10-11,4.8,4.2,45,1,No
+12,Linda Thomas,29,F,Marketing,Content Strategist,72000,2020-12-01,4.1,4.3,40,0,No
+13,Michael Scott,44,M,Sales,Regional Manager,98000,2014-06-20,4.7,3.9,48,1,No
+14,Nina Sharma,28,F,Engineering,Frontend Developer,83000,2021-07-08,4.0,4.5,41,0,No
+15,Oscar Martinez,39,M,Finance,Accountant,76000,2018-09-14,4.2,4.0,40,0,No
+16,Priya Singh,32,F,Engineering,Data Scientist,105000,2019-11-30,4.6,4.7,43,1,No
+17,Quentin Blake,37,M,Marketing,SEO Specialist,69000,2017-04-05,3.7,3.8,41,0,No
+18,Rachel Green,30,F,HR,HR Specialist,68000,2020-02-22,4.0,4.1,40,0,No
+19,Sam Wilson,34,M,Engineering,Full Stack Developer,92000,2018-08-15,4.3,4.4,42,1,No
+20,Tina Lopez,26,F,Sales,Sales Associate,58000,2022-06-10,3.4,3.6,45,0,Yes
+21,Uma Patel,31,F,Finance,Financial Planner,87000,2019-05-09,4.4,4.2,41,1,No
+22,Victor Hugo,40,M,Engineering,Solutions Architect,115000,2016-12-17,4.9,4.5,44,1,No
+23,Wendy Adams,28,F,Marketing,Social Media Manager,71000,2021-09-03,4.1,4.3,40,0,No
+24,Xavier Carter,36,M,HR,HR Director,99000,2015-03-28,4.7,4.0,42,1,No
+25,Yasmin Ali,29,F,Engineering,ML Engineer,108000,2020-10-19,4.6,4.6,43,1,No
+26,Zach Taylor,33,M,Sales,Account Executive,64000,2019-01-07,3.8,3.9,46,0,No
+27,Ava Thompson,27,F,Engineering,QA Engineer,78000,2021-05-16,4.2,4.4,41,0,No
+28,Brandon King,38,M,Finance,Risk Analyst,93000,2017-06-25,4.5,4.1,40,1,No
+29,Chloe White,30,F,Marketing,Brand Manager,85000,2018-11-11,4.3,4.2,42,1,No
+30,Daniel Evans,42,M,Engineering,Engineering Manager,120000,2014-09-09,4.8,4.3,45,1,No

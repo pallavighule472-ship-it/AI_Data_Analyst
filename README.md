@@ -6,6 +6,12 @@ Built with **LangGraph**, **FastAPI**, and **Streamlit**.
 
 ---
 
+## Demo
+
+![AnalytIQ UI](Screenshot_1.png)
+
+---
+
 ## Features
 
 - **Natural Language Queries** — Ask anything about your data in plain English

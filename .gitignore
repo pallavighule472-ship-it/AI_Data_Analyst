@@ -1,7 +1,8 @@
-@"
 .env
 venv/
 __pycache__/
 *.pyc
+*.pyo
 sessions.db
-"@ | Out-File -FilePath .gitignore -Encoding utf8
+*.egg-info/
+.git/

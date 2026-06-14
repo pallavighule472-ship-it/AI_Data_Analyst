@@ -159,6 +159,8 @@ def analyze(request: Request, body: QueryRequest):
 
     if not body.query.strip():
         raise HTTPException(status_code=400, detail="Query cannot be empty.")
+    if len(body.query) > 500:
+        raise HTTPException(status_code=400, detail="Query too long. Maximum 500 characters.")
 
     try:
         result = workflow.invoke({
@@ -198,6 +200,8 @@ def analyze_stream(request: Request, body: QueryRequest):
 
     if not body.query.strip():
         raise HTTPException(status_code=400, detail="Query cannot be empty.")
+    if len(body.query) > 500:
+        raise HTTPException(status_code=400, detail="Query too long. Maximum 500 characters.")
 
     # Run analysis pipeline (schema → classify → pandas → chart)
     state: dict = {

@@ -17,23 +17,31 @@ def post_with_retry(url: str, max_retries: int = 3, **kwargs) -> requests.Respon
                 raise
             time.sleep(2 ** attempt)
 
-API_URL  = "http://127.0.0.1:8000"
+API_URL  = os.getenv("API_URL",  "http://127.0.0.1:8000")
 PASSWORD = os.getenv("ANALYTIQ_PASSWORD", "analytiq123")
 
 st.set_page_config(page_title="AnalytIQ", page_icon="⚡", layout="wide")
 
 if "authenticated" not in st.session_state:
     st.session_state["authenticated"] = False
+if "login_attempts" not in st.session_state:
+    st.session_state["login_attempts"] = 0
 
 if not st.session_state["authenticated"]:
     st.title("⚡ AnalytIQ")
+    if st.session_state["login_attempts"] >= 5:
+        st.error("Too many failed attempts. Please restart the app.")
+        st.stop()
     pwd = st.text_input("Enter password to continue", type="password")
     if st.button("Login"):
         if pwd == PASSWORD:
             st.session_state["authenticated"] = True
+            st.session_state["login_attempts"] = 0
             st.rerun()
         else:
-            st.error("Incorrect password.")
+            st.session_state["login_attempts"] += 1
+            remaining = 5 - st.session_state["login_attempts"]
+            st.error(f"Incorrect password. {remaining} attempt(s) remaining.")
     st.stop()
 
 st.markdown("""
